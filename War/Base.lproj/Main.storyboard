@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dym-ti-72A" userLabel="BackgroundImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Dym-ti-72A" userLabel="BackgroundImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -101,6 +101,9 @@
                                         <state key="normal" title="Play Round">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="playRoundTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cks-P0-SEP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -199,4 +202,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="169" height="112"/>
+    </resources>
 </document>
